@@ -9,7 +9,8 @@ tcpsock:receive
 
 根据读取规则或大小，从当前连接 socket 中接收数据。
 
-该方法是一个异步操作就像 [send](#tcpsocksend) 方法一样，并且是 100% 非阻塞的。
+(This method is a synchronous operation just like the send method and is 100% nonblocking.)
+该方法是一个同步~~异步~~操作就像 [send](#tcpsocksend) 方法一样，并且是 100% 非阻塞的。
 
 成功情况下，返回接收到的数据；失败情况，返回 `nil` 、一个错误描述信息以及目前接收到的部分数据。
 
